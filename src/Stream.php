@@ -81,7 +81,20 @@ class Stream implements StreamInterface
     public function __toString()
     {
         try {
-            $this->seek(0);
+            $offset = 0;
+            $whence = 0;
+
+            if (!isset($this->stream)) {
+                throw new \RuntimeException('Stream is detached');
+            }
+            if (!$this->seekable) {
+                throw new \RuntimeException('Stream is not seekable');
+            }
+            if (fseek($this->stream, $offset, $whence) === -1) {
+                throw new \RuntimeException('Unable to seek to stream position '
+                    . $offset . ' with whence ' . var_export($whence, true));
+            }
+            
             return (string) stream_get_contents($this->stream);
         } catch (\Exception $e) {
             return '';
