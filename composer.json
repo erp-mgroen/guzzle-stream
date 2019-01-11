@@ -2,7 +2,7 @@
   "name": "erp-mgroen/guzzle-stream",
   "description": "Fix guzzle for PHP 7.3",
   "minimum-stability": "stable",
-  "type": "Fix guzzle stream error in PHP 7.3",
+  "type": "http-client",
   "keywords": [
     "php",
     "guzzle",
