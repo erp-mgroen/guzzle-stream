@@ -1,0 +1,28 @@
+{
+  "name": "erp-mgroen/guzzle-stream",
+  "description": "Fix guzzle for PHP 7.3",
+  "minimum-stability": "stable",
+  "type": "Fix guzzle stream error in PHP 7.3",
+  "keywords": [
+    "php",
+    "guzzle",
+    "php7.3",
+    "stream"
+  ],
+  "homepage": "https://github.com/erp-mgroen/guzzle-stream",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "erp-mgroen",
+      "role": "Organization"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GuzzleHttp\\Psr7\\": "src"
+    }
+  }
+}
