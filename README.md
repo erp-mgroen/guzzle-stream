@@ -1,0 +1,1 @@
+This package replace broken GuzzleHttp\Psr7\Stream class in PHP 7.3 
