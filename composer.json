@@ -18,6 +18,7 @@
     }
   ],
   "require": {
+    "guzzlehttp/guzzle": "*",
     "php": ">=7.3.0"
   },
   "autoload": {
