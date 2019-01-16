@@ -205,7 +205,7 @@ class Stream implements StreamInterface
 
     public function rewind()
     {
-        $this->seek(0);
+        $this->seek(0, 0);
     }
 
     public function seek($offset, $whence = SEEK_SET)
