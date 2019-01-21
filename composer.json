@@ -24,7 +24,8 @@
   },
   "autoload": {
     "psr-4": {
-      "GuzzleHttp\\Psr7\\": "src"
+      "GuzzleHttp\\Psr7\\": "src",
+      "GuzzleHttp\\Handler\\": "guzzle/Handler"
     }
   }
 }
